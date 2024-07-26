@@ -29,7 +29,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -60,9 +60,9 @@
           <li><a href="membership.html">Membership</a></li>
 
 
-
-       <li class="dropdown"><a href="Sasce.html"><span>  Gallery</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <!-- href="Sasce.html" -->
+       <li class="dropdown" ><a href="SASCEgallery.html"><span>  Gallery</span></a>
+            <!-- <ul>
               <li><a href="WIL2022HomePage.html">2022 WIL-AFRICA CONFERENCE</a></li>
               <li><a href="2018Homepage.html">2018 WIL-AFRICA CONFERENCE</a></li>
               <li><a href="2016Homepage.html">2016 WIL-AFRICA CONFERENCE</a></li>
@@ -73,7 +73,7 @@
                    <li><a href="Thailand Cultural event, 2017.html">Thailand Cultural Event, 2017</a></li>
               <li><a href="Studyvisity.html">Study Visit </a></li>
                
-            </ul>
+            </ul> -->
           </li>
 
 		     
@@ -118,73 +118,73 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="8000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+ 
+  <section class="banner">
+    <img src="imgx/vvv.png" alt="SASCE Banner">
+    <a id="downloadButton" href="assets/Images/2024Conference.pdf">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-download download-icon" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+        </svg>
+    </a>
+</section>
 
-      <div class="carousel-inner" role="listbox">
+<section class="welcome">
+    <h1 style="font-weight:bold;">Welcome to SASCE</h1>
+    <p>Centre of Excellence for Co-operative and Work-Integrated Learning in Southern Africa</p>
+    <button class="read-more" onclick="location.href='about.html'">Read More</button>
+    <button class="join-us" onclick="location.href='membership.html'">Join Us Today</button>
+    
+<br>
+     <a href="2024conference.html">
+      2024 Conference
+  </a>
+</section>
 
-
-
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(student.jpg);">
-          <div class="carousel-container">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2 class="text-center">Work-Integrated Learning</h2>
-
-  
-              <p>Improving Employability of Work-Integrated Learning Students by exposing Students to work environment.</p>
-<p><p></p>
-            
-			 
+<!-- <section class="previous-conference">
+    <h2>Previous Conference</h2>
+    <div class="slider">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slides">
+            <div class="slide">
+                <img src="imgx/cape.jpeg" alt="SASCE Webinar 1">
+                <p>SASCE LIVE TRAINING WEBINAR</p>
+                <p>05 September 2023</p>
+                <p>10:00 am</p>
             </div>
-          </div>
-        </div>
-
-
-
- <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/Images/fullposter.jpg);">
-          <div class="carousel-container">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2 class="text-center">Welcome to <span> SASCE</span></h2>
-              <p>Centre of Excellence for Co-operative and Work-Integrated Learning in Southern Africa.</p>
-              <div class="text-center"><a href="about.html" target="_blank" class="btn-get-started">Read More</a></div>
-              <div class="text-center"><a href="membership.html" target="_blank" class="btn-get-started">Join Us today</a></div>
+            <div class="slide">
+                <img src="imgx/sasceIcon.jpeg" alt="SASCE Webinar 2">
+                <p>SASCE LIVE TRAINING WEBINAR</p>
+                <p>05 September 2023</p>
             </div>
-          </div>
+            <div class="slide">
+                <img src="path/to/webinar3.png" alt="SASCE Webinar 3">
+                <p>SASCE LIVE TRAINING WEBINAR</p>
+                <p>05 September 2023</p>
+            </div>
         </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/Images/Unisa1.jpg);">
-          <div class="carousel-container">
-           
-          </div>
-        </div>
-
- <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/Images/NELSONMANDELA1.jpg);">
-          <div class="carousel-container">
-           
-          </div>
-        </div>
-
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
-  </section><!-- End Hero -->
+</section> -->
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/NELSONMANDELA15.jpg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"> <img lass="imageSlide" src="assets//Images/web-live.jpeg" alt="SASCE Webinar 2"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/newevent1.jpg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/unisa1.jpg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/fullposter.jpg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/hotel.png" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/exhibition.jpg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/conf.jpeg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/conf2.jpg" alt="SASCE Webinar 1"></div>
+    <div class="swiper-slide"><img lass="imageSlide" src="assets/Images/galadinner.jpeg" alt="SASCE Webinar 1"></div>
+
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
 
   <main id="main">
 
@@ -776,7 +776,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </html>

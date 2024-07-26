@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th WIL Africa Conference 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta content="SASCE; sasce; wil conference " name="keywords">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Favicons -->
+    <link href="assets/img/logg.png" rel="icon">
+    <link href="assets/img/logg.png" rel="apple-touch-icon">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-color: #69B46A;
+            --secondary-color: #A96095;
+            --accent-color: #02B3A7;
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+       
+        .headerSection {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 100px;
+        }
+        .headerSection::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px);
+            transform: rotate(30deg);
+            z-index: 1;
+        }
+        .headerSection * {
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: var(--secondary-color);
+        }
+        .highlight {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--primary-color);
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .section {
+                padding: 20px;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                margin-bottom: 15px;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-label);
+                font-weight: bold;
+            }
+            .cta-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo me-auto"><a href="index.html"><span></span>SASCE</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto me-lg-6"><img src="assets/img/SASCE_logo_final-300wide.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Team</a></li>
+              
+               
+            </ul>
+          </li>
+
+          <li><a href="membership.html">Membership</a></li>
+
+
+
+       <li class="dropdown"><a href="Sasce.html"><span>  Gallery</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="WIL2022HomePage.html">2022 WIL-AFRICA CONFERENCE</a></li>
+              <li><a href="2018Homepage.html">2018 WIL-AFRICA CONFERENCE</a></li>
+              <li><a href="2016Homepage.html">2016 WIL-AFRICA CONFERENCE</a></li>
+
+                
+              <li><a href="2015Homepage.html">2015 WIL-AFRICA CONFERENCE</a></li>
+
+                   <li><a href="Thailand Cultural event, 2017.html">Thailand Cultural Event, 2017</a></li>
+              <li><a href="Studyvisity.html">Study Visit </a></li>
+               
+            </ul>
+          </li>
+
+		     
+
+
+          <li class="dropdown"><a href="blog.html"><span>News</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a  href="blog.html">Events</a></li>
+              <li><a href="assets/Images/member/Youth Month Reflections MP.pdf">Newsletters</a></li>
+             <li><a href="WilNews.html">Journal</a></li>
+             
+               
+            </ul>
+          </li>
+      
+         
+         
+          <li><a href="contact.html">Contact</a></li>
+                  
+          <li><a href="index2.html">WIL AFRICA</a></li>
+		  
+		    <li class="dropdown"><a href="#" style="color:darkcyan;"><span> <img src="assets/Images/home/external site logo.png"> EXTERNAL SITES</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="index2.html"  >WIL-AFRICA</a></li>
+              <li><a href="http://tliu.setaportal.co.za/"> STUDENT GRANT PORTAL</a></li>
+              
+               
+            </ul>
+          </li>	
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex">
+        <a target="_blank" href="https://twitter.com/Sasce_students" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a target="_blank"  href="https://web.facebook.com/profile.php?id=100093520396805" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/sasce-sasce-371269251/" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+    <section class="headerSection">
+        <div class="container">
+            <h1>5th WIL Africa Conference</h1>
+            <p>02-04 October 2024 • Cape Town, South Africa</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="highlight">
+            <h2>Theme: "Challenges and Solutions for WIL in the 21st Century: The African Perspective"</h2>
+        </div>
+
+        <div class="section">
+            <h3>Background</h3>
+            <p>On its 40th Anniversary, SASCE proudly announces the 5th WIL Africa Conference, hosted in partnership with CPUT. This conference addresses pressing challenges in Work-Integrated Learning programmes across SADC countries, from policy to implementation.</p>
+        </div>
+
+        <div class="section">
+            <h3>Sub-themes</h3>
+            <ul>
+                <li>Future of Work and Innovations</li>
+                <li>Quality Standards for WIL</li>
+                <li>WIL Partnerships and Employer Engagement</li>
+                <li>Future-proof Curriculum</li>
+                <li>Employability, Entrepreneurship and Intrapreneurship</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Presentation Formats</h3>
+            <h4>Refereed Oral Paper Presentation</h4>
+            <p>Rolling review of abstracts. Accepted researchers will be advised on full paper submission deadlines.</p>
+            
+            <h4>Poster Presentation</h4>
+            <ul>
+                <li>200-300 word abstracts describing the research</li>
+                <li>Posters to cover: Introduction, Methods, Results, Discussion, Implications, and References</li>
+                <li>Dedicated poster session for Q&A with authors</li>
+            </ul>
+            <p><strong>Abstract submission deadline: 31 May 2024</strong></p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYKqm9Aan3fVkbfxNOC89outkI8YZztoAfA7OZIBcsqNQC5w/viewform?usp=sf_link" class="cta-button">Submit Abstract & Register</a>
+        </div>
+
+        <div class="section">
+            <h3>Registration Fees</h3>
+            <h4>Early Bird (Until 30 April 2024)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Platinum Members</th>
+                        <th>Corporate & Individual</th>
+                        <th>Non-Members</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Category">Fee</td>
+                        <td data-label="Platinum Members">R9500 (Incl 2-nights B&B)</td>
+                        <td data-label="Corporate & Individual">R7200</td>
+                        <td data-label="Non-Members">R8500</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Normal Registration</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Platinum Members</th>
+                        <th>Corporate & Individual</th>
+                        <th>Non-Members</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Category">Fee</td>
+                        <td data-label="Platinum Members">R7900 (No accommodation)</td>
+                        <td data-label="Corporate & Individual">R8500</td>
+                        <td data-label="Non-Members">R9900</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>Program Highlights</h3>
+            <ul>
+                <li>Pre-conference workshops including "Writing for Publication"</li>
+                <li>Official opening by Minister of Higher Education, Science, & Innovations</li>
+                <li>Plenary sessions on Partnerships, Future of Work, and Employability</li>
+                <li>Parallel sessions and poster presentations</li>
+                <li>Networking opportunities and Awards Dinner</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Contact Us</h3>
+            <p>Email: events@sasce.net</p>
+            <p>Tel: +27 83 315 2522 or +27 10 005 6829</p>
+        </div>
+
+        <div class="highlight">
+            <h3>Don't miss out! Register by 30 April 2024 for early bird discounts!</h3>
+            <a href="#" class="cta-button">Register Now</a>
+        </div>
+    </div>
+</body>
+</html>
