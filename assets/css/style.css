@@ -2162,8 +2162,14 @@ section {
   background-color: #28a745;
   color: #fff;
 }
+.my{
+  color:red;
+  font-weight: bold;
+}
 
-
+.my:hover{
+  color:blue;
+}
 /* .previous-conference {
   text-align: center;
   padding: 50px 20px;
