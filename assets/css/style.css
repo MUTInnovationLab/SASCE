@@ -2170,6 +2170,10 @@ section {
 .my:hover{
   color:blue;
 }
+.main-wil-container{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
 /* .previous-conference {
   text-align: center;
   padding: 50px 20px;
