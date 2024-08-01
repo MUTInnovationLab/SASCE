@@ -2100,8 +2100,23 @@ section {
 
 @media (max-width: 600px) {
   #downloadButton {
-    right: 31px; /* Adjust the right position for smaller screens */
+    right: 20px;  /* Adjust the right position for smaller screens */
     bottom: 14px; /* Adjust the bottom position if necessary */
+    
+  }
+  .sasceH3{
+    display: none;
+  }
+  /* .banner {
+
+    width: 100%;
+    padding: 0;
+    
+  } */
+
+  .banner img {
+    width: 100%;
+padding: 0;
   }
 }
 
@@ -2137,6 +2152,7 @@ section {
 .welcome {
   text-align: center;
   margin-top:-67px;
+  padding-bottom:20px ;
 
 }
 
