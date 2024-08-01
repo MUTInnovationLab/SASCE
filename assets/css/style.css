@@ -632,6 +632,12 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+.bread {
+  padding: 10px 0;
+  background: #284585;
+  min-height: 40px;
+  margin-top: 72px;
+}
 .breadcrumbs {
   padding: 15px 0;
   background: #284585;
