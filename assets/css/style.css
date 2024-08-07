@@ -2228,3 +2228,131 @@ button.prev {
 button.next {
   right: 10px;
 } */ 
+
+
+
+
+
+
+.wil-navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  position: relative;
+}
+
+.wil-nav-toggle {
+  display: none;
+}
+
+.wil-nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.wil-nav-toggle-label span,
+.wil-nav-toggle-label span::before,
+.wil-nav-toggle-label span::after {
+  display: block;
+  background: #333;
+  height: 2px;
+  width: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+
+.wil-nav-toggle-label span::before,
+.wil-nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.wil-nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.wil-nav-toggle-label span::after {
+  top: 7px;
+}
+
+.wil-nav-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #f8f9fa;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.3s ease-out;
+}
+
+.wil-nav-toggle:checked ~ .wil-nav-menu {
+  transform: scale(1, 1);
+}
+
+.wil-nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wil-nav-menu li {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.wil-nav-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wil-dropdown > a::after {
+  content: '▼';
+  font-size: 0.7em;
+  margin-left: 0.5em;
+}
+
+.wil-submenu {
+  display: none;
+  padding-left: 1rem;
+}
+
+.wil-dropdown:hover .wil-submenu {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .wil-nav-toggle-label {
+    display: none;
+  }
+
+  .wil-nav-menu {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .wil-nav-menu ul {
+    display: flex;
+  }
+
+  .wil-nav-menu li {
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+
+  .wil-submenu {
+    position: absolute;
+    background: #f8f9fa;
+    padding: 1rem;
+    display: none;
+  }
+
+  .wil-dropdown:hover .wil-submenu {
+    display: block;
+  }
+}
