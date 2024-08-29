@@ -3269,6 +3269,7 @@ section {
 .welcome h1 {
   font-size: 36px;
   color: #0056b3;
+  margin-top:-40px;
 }
 
 .welcome p {
